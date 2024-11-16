@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #app {
+        color: aqua;
+        font-weight: bold;
+        font-size: 5rem;
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./node_modules/typewriter-effect/dist/core.js"></script>
+
+    <div id="app"></div>
+
+    <script>
+      var app = document.getElementById("app");
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
+
+      typewriter
+        .typeString("heh aku, ikut Renang !!??")
+        .pauseFor(1000)
+        .typeString("<br>Maaf Maaf ya Enggak Ah 😎") // Gunakan <br> untuk baris baru
+        .pauseFor(500)
+        .typeString("<br>Mending Tidur HaHa 😂🤣👍")
+        .start();
+    </script>
+  </body>
+</html>
